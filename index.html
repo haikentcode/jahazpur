@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+  <title>Jahazpur</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- online CDN
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   -->
+
+
+  <link rel="stylesheet" href="./plugin/css/bootstrap.min.css">
+  <script src="./plugin/js/jquery.min.js"></script>
+  <script src="./plugin/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+
+
+    #pageHead{
+        background-image: url(./images/bg.jpg);
+    }
+
+    #locationImaage{
+        min-height:140px;
+        background:url(./images/location.jpg) 50% 50%;
+    }
+    
+   .grow { transition: all .2s ease-in-out; }
+   .grow:hover { transform: scale(1.5); }
+   .img-thumbnail{
+                    background-color:transparent;border: 0px;
+                  }
+
+  #pimage{
+
+      width: 220px;
+      height: 200px;
+  }
+  </style>
+
+
+  <script type="text/javascript">
+
+    
+    function thumber(img){
+              
+              txt='<img src="'+img+'" id="pimage"class="img-thumbnail grow">';
+
+              return txt
+
+    }
+
+    function historicalPlaceImage(){
+
+                var htmlObject=document.getElementById("placeImages");
+                 
+                var folder="./historicalPlaceImage/";
+                var finaltxt="";
+                for(var i=1;i<=16;i++){
+                  
+                     finaltxt+=thumber(folder+i+".jpg");
+                }
+             return finaltxt   
+    }
+
+
+  </script>
+
+
+
+</head>
+<body>
+<div class="container">
+   <div class="jumbotron " id="pageHead">
+      <div class="text text-primary" style="opacity:0.8">
+         <h1 class="text-success">Jahazpur</h1> 
+         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tourism Portal</p>
+    </div>
+  </div>
+
+
+   <div class="row"  id="historicalPlaceImage">
+
+
+      <div class="col-sm-2"> 
+         
+        <div class="list-group">
+              <a class="list-group-item active" href="./index.html">Home</a>
+              <a class="list-group-item "  href="./mycity.html">My City</a>
+              <a class="list-group-item "  href="./listofmonuments.html">List Of Monument</a>
+              <a class="list-group-item " href="./historyofthecity.html">History Of City</a>
+              <a class="list-group-item " href="./importantaddress.html">Important Address</a>
+              <a class="list-group-item " href="./feedback.html">Feedback Form</a>
+        </div>
+        
+      </div>
+
+
+      <div class="col-sm-10">
+
+          <div class="panel panel-primary ">
+                <div class="panel-heading lead">Historical Places</div>
+                <div class="panel-body" id="placeImages">
+                      <script type="text/javascript">
+                        document.write(historicalPlaceImage());
+                      </script>
+                </div>
+          </div>
+
+       </div>
+
+   </div>
+
+
+
+   <div class="row"  id="toplevelInformation">
+        
+      <div class="well well-sm">  
+        <div class="panel-group">
+
+              <div class="panel panel-primary ">
+                <div class="panel-heading lead text-uppercase text-success">Information</div>
+                  <div class="panel-body">
+                       <div class="col-sm-3 text-info">
+                            <dl>
+                                 <dt>Country</dt>
+                                 <dd>&nbsp;&nbsp;&nbsp;&nbsp;India</dd>
+                                 <dt>State</dt>
+                                 <dd>&nbsp;&nbsp;&nbsp;&nbsp;Rajasthan</dd>
+                                 <dt>District</dt>
+                                 <dd>&nbsp;&nbsp;&nbsp;&nbsp;Bhilwara</dd>
+                            </dl>
+                       </div>
+
+                       <div class="col-sm-3 text-info">
+                             <dl>
+                                <dt>Elevation</dt>
+                                <dd>&nbsp;&nbsp;&nbsp;&nbsp;334 m (1,096 ft)</dd>
+                                <dt>located at</dt>
+                                <dd>&nbsp;&nbsp;&nbsp;&nbsp;25.62°N 75.28°E</dd>
+                                <dt>literacy rate<dt>
+                                <dd>&nbsp;&nbsp;&nbsp;&nbsp;59%</dd>
+
+                             </dl>
+                        
+                         
+                       </div>
+
+                       <div class="col-sm-3 text-info">
+
+                        <dl>
+                             <dt>Population (2001)</dt>
+                             <dd>&nbsp;&nbsp;&nbsp;&nbsp;Total  18,816</dd>
+                             <dt>Language(official)</dt>
+                             <dd>&nbsp;&nbsp;&nbsp;&nbsp;Hindhi</dd>
+                             <dt>Time zone </dt>
+                             <dd>&nbsp;&nbsp;&nbsp;&nbsp;IST (UTC+5:30)</dd>
+                        </dl>
+                         
+
+
+                       </div>
+
+                       <div class="col-sm-3 img-thumbnail" id="locationImaage">
+                           <!-- background Is Image of location -->
+                       </div>
+
+                  </div>
+              </div>
+
+
+
+             <div class="panel panel-info text-success text-justify text-capitalize">
+                <div class="panel-heading">About Jahazpur</div>
+                <div class="panel-body">
+                   Jahazpur is a City in Jahazpur Tehsil in Bhilwara District of Rajasthan State, India. It belongs to Ajmer Division . It is located 83 KM towards East from District head quarters Bhilwara. It is a Tehsil head quarter. 
+                   Jahazpur Pin code is 311201 and postal head office is Jahazpur
+                </div>
+             </div>
+
+            <div class="panel panel-info text-info text-justify text-capitalize small">
+
+                   <div class="panel-heading">Nearby Villages </div>
+                   <div class="panel-body">
+                      Gadoli ( 6 KM ) , Luhari Kalan ( 6 KM ) , Rawat Khera ( 7 KM ) , Gangithala ( 7 KM ) , Piplund ( 8 KM ) are the nearby Villages to Jahazpur. Jahazpur is surrounded by Deoli Tehsil towards North , Hindoli Tehsil towards East , Shahpura Tehsil towards west , Kekri Tehsil towards North . 
+                   </div>
+            </div>
+       </div>
+      </div>  
+
+   </div>
+
+
+   <div class="row "  id="footer">
+     <div class="well well-lg text-muted footer small text-center bg-info">
+       Copyright 2015 @ HIOS Product (Created By Aditi Agrawal)
+       <script type="text/javascript">
+            var d=new Date();
+            document.write("  | "+d);
+       </script>
+     </div>
+   </div>
+
+</div>
+</body>
+</html>

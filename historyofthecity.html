@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+  <title>Jahazpur</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- online CDN
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   -->
+
+
+  <link rel="stylesheet" href="./plugin/css/bootstrap.min.css">
+  <script src="./plugin/js/jquery.min.js"></script>
+  <script src="./plugin/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    #pageHead{
+        background-image: url(./images/bg.jpg);
+    }
+
+    #locationImaage{
+        min-height:140px;
+        background-image: url(./images/location.jpg);
+    }
+
+  </style>
+
+
+
+</head>
+<body>
+<div class="container">
+   <div class="jumbotron " id="pageHead">
+      <div class="text text-primary" style="opacity:0.8">
+         <h1 class="text-success">Jahazpur</h1> 
+         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tourism Portal</p>
+    </div>
+  </div>
+
+
+   <div class="row"  id="historicalPlaceImage">
+
+
+      <div class="col-sm-2"> 
+         
+        <div class="list-group">
+              <a class="list-group-item active" href="./index.html">Home</a>
+              <a class="list-group-item "  href="./mycity.html">My City</a>
+              <a class="list-group-item "  href="./listofmonuments.html">List Of Monument</a>
+              <a class="list-group-item " href="./historyofthecity.html">History Of City</a>
+               <a class="list-group-item " href="./importantaddress.html">Important Address</a>
+              <a class="list-group-item " href="./feedback.html">Feedback Form</a>
+        </div>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+<!-------------------------------------- histoyofthecity page ----------------------- -->
+<style type="text/css">
+.hk{
+    font-family: "Lucida Console", Monaco, monospace
+}
+</style>
+
+ <script type="text/javascript">
+
+
+       function panelDiv(headtxt,bodytxt) {
+     
+        var txt='<div id="'+headtxt+'" class="panel panel-info "><div class="panel-heading lead">'+headtxt+'</div><div class="panel-body hk">'+bodytxt+'</div></div>';
+   
+     return txt;
+   }
+
+
+   function jahazpurHistory() {
+       
+
+           var history="Mevad ke Purane sthaano main se ek hain Jahazpur ,Bhilwara Jile Ka Mukhy sthaan hain. Jahazpur ka Purana Naam Yagyapura tha. logo ki maniyta hain ki raja janmjay ne naago ka yagya kiya tha jisme sabhi nago ko uss yagya ke antragt smapt kr diya tha. unhone yagkiya ha isliye iska naam yagyapur huaa. ab iska nya naam jahazpurhain.";
+
+
+           txt=panelDiv("Jahazpur History",history);
+
+          return txt;
+
+   }
+ 
+
+  function discriptionOfMonument(){
+             
+      var mlist=["Jai maa ghatarani","Chavndiya Mata Ji","Temple Of Mala Ji","Beri Khan","Dhod"];
+
+      var mdisc=[
+                  "Temple of ghatarani 10 away form Jahazpur history of temple is",
+                  "this is temple on deoli road",
+                  "this temple near Chavndiya temple hill",
+                  "shive temple near jahazpur ",
+                  "temple of ruthi rani",
+
+                ];
+           
+           var txt="";
+           for(var i=0;i<mlist.length;i++){
+               txt+=panelDiv(mlist[i],mdisc[i]);
+           }
+             
+
+          return txt;
+  }
+
+
+ </script>
+
+
+      <div class="col-sm-10">
+
+          <div div class="panel panel-primary ">
+                <div class="panel-heading lead">History Of The City</div>
+                <div class="panel-body">
+
+                  <script type="text/javascript">
+                   document.write(jahazpurHistory());
+                   document.write(discriptionOfMonument());
+                  </script>
+
+
+                </div>
+          </div>
+
+       </div>
+
+   </div>
+
+<!------------------------------  end for histoyofthecity -------------------- -->
+
+
+
+
+
+
+
+
+
+
+   <div class="row "  id="footer">
+     <div class="well well-lg text-muted footer small text-center bg-info">
+       Copyright 2015 @ HIOS Product (Created By Aditi Agrawal)
+       <script type="text/javascript">
+            var d=new Date();
+            document.write("  | "+d);
+       </script>
+     </div>
+   </div>
+
+</div>
+</body>
+</html>
